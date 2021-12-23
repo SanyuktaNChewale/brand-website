@@ -1,0 +1,278 @@
+.s006 {
+  min-height: 100vh;
+  display: -ms-flexbox;
+  display: flex;
+  background: url("wallpaper.jpg");
+  background-size: cover;
+  background-position: center center;
+  padding: 15px;
+}
+
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.buttons {
+    margin: 10%;
+    text-align: center;
+}
+
+.btn-hover {
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    position:absolute;
+    left :40%;
+    right:50%;
+    bottom: 2%;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 100% 100%;
+
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+.btn-hover.color-1 {
+    background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+
+
+#content1 {
+	position:relative;
+	padding:50px 0 0px 0;
+}
+
+.animate-contain {
+	height: 40px;
+	overflow: hidden;
+	text-align: center;
+	margin-top: 50px;
+}
+.animated-text {
+	display: inline-block;
+	transition: 300ms all;
+	margin-top: 0;
+	animation: slide 3s infinite alternate ease-in-out;
+	background-color: #fe302f;
+	color: #fff;
+}
+.animated-text span {
+	display: block;
+	font-size: 20px;
+	padding:8px 5px;
+}
+@keyframes slide{
+	0%{margin-top:0;}
+	20%{margin-top:0;}
+	40%{margin-top:-40px;}
+	60%{margin-top:-40px;}
+	80%{margin-top:-80px;}
+	100%{margin-top:-80px;}
+
+}
+
+
+a,
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.section-products {
+    padding: 80px 0 54px;
+}
+
+.section-products .header {
+    margin-bottom: 50px;
+}
+
+.section-products .header h2 {
+    font-size: 1rem;
+    color: #fe302f;
+    font-weight: 500;
+}
+
+.section-products .header h1 {
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: #444444; 
+}
+
+.section-products .single-product {
+    margin-bottom: 26px;
+}
+
+.section-products .single-product .part-1 {
+    position: relative;
+    height: 290px;
+    max-height: 290px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.section-products .single-product .part-1::before {
+		position: absolute;
+		content: "";
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+		transition: all 0.3s;
+}
+
+.section-products .single-product:hover .part-1::before {
+		transform: scale(1.2,1.2) rotate(5deg);
+}
+
+.section-products #product-1 .part-1::before {
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIwtF9yZs5n4ZXZrKEakbFmbF_FELHUCPvwg&usqp=CAU") no-repeat center;
+    background-size: cover;
+		transition: all 0.3s;
+}
+
+.section-products #product-2 .part-1::before {
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYce5Xqh7H8TKYHCayc9xg7O6UmrfhHpzKfw&usqp=CAU") no-repeat center;
+    background-size: cover;
+}
+
+.section-products #product-3 .part-1::before {
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9-3kFQejmOFc-sBOddGN1-Rqp8fWyfajpTw&usqp=CAU") no-repeat center;
+    background-size: cover;
+}
+
+.section-products #product-4 .part-1::before {
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPe9yHlAdXEhywFqHNxt_LJxehmMfZdO5ufg&usqp=CAU") no-repeat center;
+    background-size: cover;
+}
+
+.section-products #product-5 .part-1::before {
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCL9FHVdr2kU8jS6CXJFXw0ra-fkeQZPyHYA&usqp=CAU") no-repeat center;
+    background-size: cover;
+}
+
+.section-products #product-6 .part-1::before {
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZhQEi9pDa409NyZ6eh7sXhnc5lOH7ngTCWg&usqp=CAU") no-repeat center;
+    background-size: cover;
+}
+
+.section-products #product-7 .part-1::before {
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp4sCk-Yz-6g8LD3kVLzT8eYUMY4sWlw6IDg&usqp=CAU") no-repeat center;
+    background-size: cover;
+}
+
+.section-products #product-8 .part-1::before {
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDLkZ1gtkXQ1Xpn26jrDbVPPcGGg0IvkUYvA&usqp=CAU") no-repeat center;
+    background-size: cover;
+}
+.section-products .single-product .part-1 .discount,
+.section-products .single-product .part-1 .new {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    color: #ffffff;
+    background-color: #fe302f;
+    padding: 2px 8px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+.section-products .single-product .part-1 .new {
+    left: 0;
+    background-color: #444444;
+}
+
+.section-products .single-product .part-1 ul {
+    position: absolute;
+    bottom: -41px;
+    left: 20px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    opacity: 0;
+    transition: bottom 0.5s, opacity 0.5s;
+}
+
+.section-products .single-product:hover .part-1 ul {
+    bottom: 30px;
+    opacity: 1;
+}
+
+.section-products .single-product .part-1 ul li {
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.section-products .single-product .part-1 ul li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #ffffff;
+    color: #444444;
+    text-align: center;
+    box-shadow: 0 2px 20px rgb(50 50 50 / 10%);
+    transition: color 0.2s;
+}
+
+.section-products .single-product .part-1 ul li a:hover {
+    color: #fe302f;
+}
+
+.section-products .single-product .part-2 .product-title {
+    font-size: 1rem;
+}
+
+.section-products .single-product .part-2 h4 {
+    display: inline-block;
+    font-size: 1rem;
+}
+
+.section-products .single-product .part-2 .product-old-price {
+    position: relative;
+    padding: 0 7px;
+    margin-right: 2px;
+    opacity: 0.6;
+}
+
+.section-products .single-product .part-2 .product-old-price::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #444444;
+    transform: translateY(-50%);
+}
+
+
+
+#content {
+	position:relative;
+	padding:50px 0 0px 0;
+}
